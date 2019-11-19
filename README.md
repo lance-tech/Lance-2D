@@ -33,7 +33,7 @@ It provides user-defined components and can be added to a game object to configu
 
 It is easy to apply the hierarchical structure between game objects in the scene graph. By applying the basic 3D hierarchy, the child node inherits the transform properties of the parent node.
 
-The scenes that made by yourself can be stored separately and each scene can be loaded by registering them in the scene manager at run-time.
+The created scene can be saved as a file and imported through the File Manager at run-time. In addition, registering each scene in the scene manager makes it easy to switch between different scenes. 
 
   
 
@@ -46,7 +46,7 @@ The scenes that made by yourself can be stored separately and each scene can be 
 ## Map Tool
 
 ## Game Scene
-For one game to work, you must inherit the game scene and define at least one new game scene. If you inherit the game scenes provided by the engine, you can use methods such as game logic, rendering, and input event.
+For one game to work, you must inherit the game scene and define at least one new game scene. If you inherit the game scenes provided by the engine, you can use methods such as **game logic**, **rendering**, and **input event**.
 
 The defined scene must be register to scene manager before the play for game.
 
@@ -54,6 +54,8 @@ After the register in scene manager, the instance is managed by the scene manage
 
 Below is a simple example.
 ```c++
+// MyGameScene.h
+
 #include <Scene/GameScene.h>
 
 class MyGameScene : public GameScene
@@ -66,6 +68,8 @@ public:
 ```
 
 ```c++
+// MyGameScene.cpp
+
 MyGameScene *scene1 = new MyGameScene();
 SceneManager::AddGameScene(*scene1);
 ```
@@ -77,6 +81,8 @@ These events can be used by overriding the functions below.
 
 Below is a simple example.
 ```c++
+// MyGameScene.h
+
 void OnKeyPressed(int Event) override;
 void OnKeyReleased(int Event) override;
 void OnMousePressed(int Event, double x, double y) override;
@@ -85,6 +91,8 @@ void OnMouseReleased(int Event, double x, double y) override;
 ```
 
 ```c++
+// MyGameScene.cpp
+
 void MyGameScene::OnKeyPressed(int Event)
 {
     switch (Event)
@@ -117,6 +125,8 @@ For example, if an animation is applied to a movement where a game object is del
 Below is a simple example.
 
 ```c++
+// MyGameScene.cpp
+
 // Create the Anomator Instance that animation for some object
 Animator* animator = new Animator();
 
@@ -132,6 +142,8 @@ animator->SetTargetObject(object);
 // Add animator in animation manager
 SceneManager::animationManager.AddAnimator(*animator);
 
+
+// OtherScene.cpp
 // And finally you can play your animation in any other scope.
 SceneManager::animationManager.PlayAnimators();
 ```
@@ -145,6 +157,8 @@ You also do not need to invoke the constructor directly, but you can call it thr
 
 Below is a simple example.
 ```c++
+// MyGameScene.cpp
+
 TetrisBlock &tBlock = (TetrisBlock&)SceneManager::CreateObject(OBJECTTYPE::block0);
 SceneRoot->RootNode->AddChild(tBlock);
 ```
@@ -156,6 +170,8 @@ Object &obejct = SceneRoot->FindNode("Object Name").GetNodeObject();
 ## Scene Graph – Advanced
 Acyclic graph is a scene (DAG : Tree ) of nodes. There is only one top-level root node in the scene. One node contains a list of adjacent nodes and has a parent node pointer together. And it has a game object pointer, the actual data of the node.
 ```c++
+// <Core/Node.h>
+
 class Node
 {
 private:
@@ -172,6 +188,7 @@ Each For-loop method supports two types, one involving a return value and the ot
 
 Below is an example of the getting a selected object.
 ```c++
+// <Core/Node.cpp>
 // Define the method according to the predefined function pointer of prototype
 void* SelectedObject(Node& node, const void* source)
 {
@@ -183,6 +200,8 @@ void* SelectedObject(Node& node, const void* source)
 	return resNode;
 }
 
+
+// <Controller/SceneGraph.cpp>
 // How to use
 // Define the return variable
 void* returnValue = nullptr;
@@ -206,7 +225,8 @@ Game components can be used in add to all game objects.
 
 Below is a simple example.
 ```c++
-// Include GameComponent.h
+// ObjectBehaviour.h
+
 #include <GameComponent/GameComponent.h>
 
 // Defines the sub class of GameComponent
@@ -222,7 +242,8 @@ public:
 ```
 
 ```c++
-// Scene code
+// MyGameScene.cpp
+
 // Instanciate your GameComponent
 ObjectBehaviour *objectBehaviour = new ObjectBehaviour();
 // Set a specific name.
@@ -242,7 +263,9 @@ The UI button component used in the game must bind with callback function after 
 
 Example of creating an object directly from a scene.
 ```c++
-glButton &MyButton = (glButton&)SceneManager::CreateObject(BUTTON);
+// MyGameScene.cpp
+
+glButton &MyButton = (glButton&)SceneManager::CreateObject(OBJECTTYPE::BUTTON);
 SceneRoot->RootNode->AddChild(MyButton);
 MyButton.Connect(this, &MyGameScene::MyCallbackFunction);
 ```
@@ -263,6 +286,8 @@ In addition, the highest/minimum score can be easily getting by using priority-q
 
 Below is a simple example.
 ```c++
+// MyGameScene.cpp
+
 // The user's score and level are updated during the runtime game.
 score++;
 GameDataManager::SetUserScore(score);
