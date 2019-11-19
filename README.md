@@ -40,7 +40,8 @@ The scenes that made by yourself can be stored separately and each scene can be 
 # Review
 
 ## Game Life Cycle
-![CreatePlan](./screenshot/Game Lifecycle.png)
+
+![CreatePlan](./screenshot/GameLifecycle.png)
 
 ## Map Tool
 
