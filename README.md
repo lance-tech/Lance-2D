@@ -2,6 +2,7 @@
 **Simple game engine for 2D board game development using OpenGL.**
 
 # Build on
+- Visual Studio Community 2019 
 - C++
 - [Qt 5.13.1](https://download.qt.io/archive/qt/5.13/5.13.1/)
 - [Qt Visual Studio Tools version 2.4.2](https://download.qt.io/archive/vsaddin/2.4.2/)
@@ -39,6 +40,7 @@ The scenes that made by yourself can be stored separately and each scene can be 
 # Review
 
 ## Game Life Cycle
+![CreatePlan](./screenshot/Game Lifecycle.png)
 
 ## Map Tool
 
