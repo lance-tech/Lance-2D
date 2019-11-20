@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TetrisBoard.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockBehaviour.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockContainer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardBehaviour.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMainScene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameResultScene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GameStartScene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlockBehaviour.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockContainer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardBehaviour.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMainScene.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameResultScene.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStartScene.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWindow.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisBoard.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{3eaaad2d-a0c6-454c-ae27-5281fb3c03e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0b3cc805-828d-408a-ad5f-6d130e1d2457}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

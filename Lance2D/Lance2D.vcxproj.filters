@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Controller\EngineEventController.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolComponent\DoubleSpinbox.cpp">
+      <Filter>ToolComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolComponent\Timeline.cpp">
+      <Filter>ToolComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\EngineEventModel.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\Inspector.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\GraphView.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\NodeModel.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\TimelinePanel.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="Lance2D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="QGLWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ToolComponent\DoubleSpinbox.h">
+      <Filter>ToolComponent</Filter>
+    </QtMoc>
+    <QtMoc Include="ToolComponent\Timeline.h">
+      <Filter>ToolComponent</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools\EngineEventModel.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools\Inspector.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools\GraphView.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools\NodeModel.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools\TimelinePanel.h">
+      <Filter>Tools</Filter>
+    </QtMoc>
+    <QtMoc Include="Lance2D.h">
+      <Filter>Header</Filter>
+    </QtMoc>
+    <QtMoc Include="QGLWindow.h">
+      <Filter>Header</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Inspector.ui">
+      <Filter>Forms</Filter>
+    </QtUic>
+    <QtUic Include="Lance2D.ui">
+      <Filter>Forms</Filter>
+    </QtUic>
+    <QtUic Include="Timeline.ui">
+      <Filter>Forms</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{b9be2aca-6d2b-4dbd-b206-4c92bfceb4d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ToolComponent">
+      <UniqueIdentifier>{0f501f24-29e4-477a-bbd6-a1709ee816be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{8d72b283-ff9c-494e-9ecd-7b0eaa9c1d7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Forms">
+      <UniqueIdentifier>{b76abdf2-6acd-4f72-8919-96548e15599d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{b7d4ce24-510b-42b6-ad53-11715e485e71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{756d40d4-df7e-46d9-ac87-652ed32580e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7f0696bd-8d21-40c2-b3e7-fe774cc7b8d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller\EngineEventController.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Lance2D.qrc">
+      <Filter>Resources</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Controller\AnimationManager.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Animator.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Collision.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Color.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Delegate.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameComponent\GameComponent.cpp">
+      <Filter>GameComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="GameComponent\EventComponent.cpp">
+      <Filter>GameComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\EmptyScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glButton.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glLabel.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glMesh.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glRect2D.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glText.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glWidget.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\glWindow.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ModelLoader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\GameDataManager.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\FileManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\ImageLoader.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Keyframe.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\Grid.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Shader.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Transform.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Texture.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GLObject\Object.cpp">
+      <Filter>GLObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\TetrisBlock.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Node.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\MaterialManager.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\StringUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\SceneManager.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\SceneGraph.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Controller\AnimationManager.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Animator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collision.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Color.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Control.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Delegate.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameComponent\GameComponent.h">
+      <Filter>GameComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="GameComponent\EventComponent.h">
+      <Filter>GameComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\EmptyScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glButton.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glLabel.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glMesh.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glRect2D.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glText.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glWidget.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\glWindow.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ModelLoader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\GameDataManager.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FileManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ImageLoader.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Keyframe.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\Grid.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Shader.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Transform.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Texture.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GLObject\Object.h">
+      <Filter>GLObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\TetrisBlock.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TimeLineModel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Node.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\MaterialManager.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StringUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\SceneManager.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\SceneGraph.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{78a5ebc1-1812-4d97-b1f2-cc2bc090d923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{cdb74478-c7ad-4d62-bc1d-4625751c9ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{ed367653-81cc-447f-9516-be447846aee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{91a4ba2a-4c80-428f-b3d0-b5937377b34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameComponent">
+      <UniqueIdentifier>{49ed305b-f948-4bd9-8e38-303dcb3be073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLObject">
+      <UniqueIdentifier>{07d040af-ba8a-4f03-9794-7bd34b1e61ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{97e590ee-9925-4646-ae67-ed4c617a9381}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

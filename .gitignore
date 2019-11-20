@@ -1,7 +1,6 @@
 *.suo
 .vs/
 *.user
-*.filters
 Engine/x64/Debug/
 Engine/x64/Engine/
 Engine/x64/Game/
