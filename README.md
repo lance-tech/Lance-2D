@@ -120,7 +120,7 @@ Below is a simple example.
 
 The second is an animation that lets you run on a specific event at run-time. This does not rely on the timeline of the scene, but has independent execution time. Therefore, it is possible to create an animation about the desired motion during run-time.
 
-For example, if an animation is applied to a movement where a game object is deleted or moved, it may fade out and disappear or implement a linear movement.
+For example, applying animation to the motion of a game object disappearing or moving can create a movement that disappears smoothly or moves linearly. 
 
 Below is a simple example.
 
