@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)/External Lib/glew-2.1.0/include;$(SolutionDir)/External Lib/glm;$(SolutionDir)/External Lib/freetype-2.10.0/include;$(SolutionDir)/External Lib/glfw-3.3.bin.WIN64/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)/External Lib/glew-2.1.0/lib/Release/x64;$(SolutionDir)/External Lib/freetype-2.10.0/lib;$(SolutionDir)/External Lib/glfw-3.3.bin.WIN64/lib-vc2019;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\External Lib\Engine\lib_game\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GAME_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Engine|x64">
+      <Configuration>Engine</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Game|x64">
+      <Configuration>Game</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Game|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Engine|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Game|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Game.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Engine|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="Engine.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Game|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\External Lib\Engine\lib_game\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Engine|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Game|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Engine|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Controller\AnimationManager.h" />
+    <ClInclude Include="Controller\GameDataManager.h" />
+    <ClInclude Include="Controller\MaterialManager.h" />
+    <ClInclude Include="Controller\SceneGraph.h" />
+    <ClInclude Include="Controller\SceneManager.h" />
+    <ClInclude Include="Core\Animation.h" />
+    <ClInclude Include="Core\Animator.h" />
+    <ClInclude Include="Core\Collision.h" />
+    <ClInclude Include="Core\Color.h" />
+    <ClInclude Include="Core\Control.h" />
+    <ClInclude Include="Core\FileManager.h" />
+    <ClInclude Include="Core\ImageLoader.h" />
+    <ClInclude Include="Core\Keyframe.h" />
+    <ClInclude Include="Core\ModelLoader.h" />
+    <ClInclude Include="Core\Node.h" />
+    <ClInclude Include="Core\Shader.h" />
+    <ClInclude Include="Core\Texture.h" />
+    <ClInclude Include="Core\TimeLineModel.h" />
+    <ClInclude Include="Core\Transform.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="GameComponent\EventComponent.h" />
+    <ClInclude Include="GameComponent\GameComponent.h" />
+    <ClInclude Include="GameObject\TetrisBlock.h" />
+    <ClInclude Include="GLObject\glButton.h" />
+    <ClInclude Include="GLObject\glLabel.h" />
+    <ClInclude Include="GLObject\glMesh.h" />
+    <ClInclude Include="GLObject\glRect2D.h" />
+    <ClInclude Include="GLObject\glText.h" />
+    <ClInclude Include="GLObject\glWidget.h" />
+    <ClInclude Include="GLObject\glWindow.h" />
+    <ClInclude Include="GLObject\Grid.h" />
+    <ClInclude Include="GLObject\Object.h" />
+    <ClInclude Include="Scene\EmptyScene.h" />
+    <ClInclude Include="Scene\GameScene.h" />
+    <ClInclude Include="Utils\Delegate.h" />
+    <ClInclude Include="Utils\StringUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Controller\AnimationManager.cpp" />
+    <ClCompile Include="Controller\GameDataManager.cpp" />
+    <ClCompile Include="Controller\MaterialManager.cpp" />
+    <ClCompile Include="Controller\SceneGraph.cpp" />
+    <ClCompile Include="Controller\SceneManager.cpp" />
+    <ClCompile Include="Core\Animation.cpp" />
+    <ClCompile Include="Core\Animator.cpp" />
+    <ClCompile Include="Core\Collision.cpp" />
+    <ClCompile Include="Core\Color.cpp" />
+    <ClCompile Include="Core\FileManager.cpp" />
+    <ClCompile Include="Core\ImageLoader.cpp" />
+    <ClCompile Include="Core\Keyframe.cpp" />
+    <ClCompile Include="Core\ModelLoader.cpp" />
+    <ClCompile Include="Core\Node.cpp" />
+    <ClCompile Include="Core\Shader.cpp" />
+    <ClCompile Include="Core\Texture.cpp" />
+    <ClCompile Include="Core\Transform.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="GameComponent\EventComponent.cpp" />
+    <ClCompile Include="GameComponent\GameComponent.cpp" />
+    <ClCompile Include="GameObject\TetrisBlock.cpp" />
+    <ClCompile Include="GLObject\glButton.cpp" />
+    <ClCompile Include="GLObject\glLabel.cpp" />
+    <ClCompile Include="GLObject\glMesh.cpp" />
+    <ClCompile Include="GLObject\glRect2D.cpp" />
+    <ClCompile Include="GLObject\glText.cpp" />
+    <ClCompile Include="GLObject\glWidget.cpp" />
+    <ClCompile Include="GLObject\glWindow.cpp" />
+    <ClCompile Include="GLObject\Grid.cpp" />
+    <ClCompile Include="GLObject\Object.cpp" />
+    <ClCompile Include="Scene\EmptyScene.cpp" />
+    <ClCompile Include="Scene\GameScene.cpp" />
+    <ClCompile Include="Utils\Delegate.cpp" />
+    <ClCompile Include="Utils\StringUtils.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,5 +1,15 @@
+*.suo
 .vs/
-Tetris/x64/
-Lance2D/x64/
-x64/Debug/
-Engine/x64/
+*.user
+*.filters
+Engine/x64/Debug/
+Engine/x64/Engine/
+Engine/x64/Game/
+Engine/x64/Release/
+External Lib/glfw-3.3.bin.WIN64/docs/
+Lance2D/x64/Debug/
+Lance2D/x64/EngineMode/
+Lance2D/x64/Release/
+Tetris/x64/Debug/
+*.ilk
+*.pdb

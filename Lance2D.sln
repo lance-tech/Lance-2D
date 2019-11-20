@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lance2D", "Lance2D\Lance2D.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B} = {58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tetris", "Tetris\Tetris.vcxproj", "{E9E5E4D6-29D4-4718-AD92-BE0271123422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Lib Build-Engine|x64 = Lib Build-Engine|x64
+		Lib Build-Engine|x86 = Lib Build-Engine|x86
+		Lib Build-Game|x64 = Lib Build-Game|x64
+		Lib Build-Game|x86 = Lib Build-Game|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Engine|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Engine|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Engine|x86.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Engine|x86.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Game|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Game|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Game|x86.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Lib Build-Game|x86.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Debug|x64.ActiveCfg = Engine|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Debug|x64.Build.0 = Engine|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Debug|x86.ActiveCfg = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Debug|x86.Build.0 = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Engine|x64.ActiveCfg = Engine|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Engine|x64.Build.0 = Engine|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Engine|x86.ActiveCfg = Engine|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Game|x64.ActiveCfg = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Game|x64.Build.0 = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Lib Build-Game|x86.ActiveCfg = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Release|x64.ActiveCfg = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Release|x64.Build.0 = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Release|x86.ActiveCfg = Game|x64
+		{58D5D2A3-CDEA-4FA0-AF73-BA73ECF1878B}.Release|x86.Build.0 = Game|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Debug|x64.ActiveCfg = Debug|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Debug|x64.Build.0 = Debug|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Debug|x86.ActiveCfg = Debug|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Debug|x86.Build.0 = Debug|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Engine|x64.ActiveCfg = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Engine|x64.Build.0 = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Engine|x86.ActiveCfg = Release|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Engine|x86.Build.0 = Release|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Game|x64.ActiveCfg = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Game|x64.Build.0 = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Game|x86.ActiveCfg = Release|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Lib Build-Game|x86.Build.0 = Release|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Release|x64.ActiveCfg = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Release|x64.Build.0 = Release|x64
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Release|x86.ActiveCfg = Release|Win32
+		{E9E5E4D6-29D4-4718-AD92-BE0271123422}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {297C7935-94EF-4062-B731-38C3753E6BC6}
+	EndGlobalSection
+EndGlobal

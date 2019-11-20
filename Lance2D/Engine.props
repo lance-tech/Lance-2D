@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)/External Lib/glew-2.1.0/include;$(SolutionDir)/External Lib/glm;$(SolutionDir)/External Lib/freetype-2.10.0/include;$(SolutionDir)/Engine;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)/External Lib/glew-2.1.0/lib/Release/x64;$(SolutionDir)/External Lib/freetype-2.10.0/lib;$(SolutionDir)/External Lib/Engine/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;GLU32.LIB;glew32.lib;freetype.lib;Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>ENGINE_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

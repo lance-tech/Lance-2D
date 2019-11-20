@@ -1,0 +1,18 @@
+﻿  BlockBehaviour.cpp
+  BlockContainer.cpp
+D:\Workspace\Lance2D\Tetris\BlockBehaviour.h(3,10): fatal error C1083: Cannot open include file: 'GameComponent/GameComponent.h': No such file or directory
+  BoardBehaviour.cpp
+D:\Workspace\Lance2D\Tetris\BlockContainer.h(3,10): fatal error C1083: Cannot open include file: 'Engine.h': No such file or directory
+  GameMainScene.cpp
+D:\Workspace\Lance2D\Tetris\BoardBehaviour.h(4,10): fatal error C1083: Cannot open include file: 'GameComponent/GameComponent.h': No such file or directory
+  GameResultScene.cpp
+D:\Workspace\Lance2D\Tetris\GameMainScene.h(7,10): fatal error C1083: Cannot open include file: 'Scene/GameScene.h': No such file or directory
+  GameStartScene.cpp
+D:\Workspace\Lance2D\Tetris\GameResultScene.h(4,10): fatal error C1083: Cannot open include file: 'Scene/GameScene.h': No such file or directory
+  GameWindow.cpp
+D:\Workspace\Lance2D\Tetris\GameStartScene.h(3,10): fatal error C1083: Cannot open include file: 'Engine.h': No such file or directory
+  main.cpp
+D:\Workspace\Lance2D\Tetris\GameWindow.h(3,10): fatal error C1083: Cannot open include file: 'Core/Control.h': No such file or directory
+  TetrisBoard.cpp
+D:\Workspace\Lance2D\Tetris\GameWindow.h(3,10): fatal error C1083: Cannot open include file: 'Core/Control.h': No such file or directory
+D:\Workspace\Lance2D\Tetris\TetrisBoard.h(3,10): fatal error C1083: Cannot open include file: 'Engine.h': No such file or directory
