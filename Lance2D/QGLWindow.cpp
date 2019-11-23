@@ -1,12 +1,11 @@
 #include "QGLWindow.h"
 
 QGLWindow::QGLWindow(QWidget *parent)
-	: QWidget(parent), glWindow(this->width(), this->height())
+	: QWidget(parent), glWindow(this->width(), this->height()),
+	engineEventModel(nullptr)
 {
 	initGL();
 	Initialize();
-
-	engineEventModel = nullptr;
 }
 
 
@@ -77,12 +76,23 @@ GLvoid QGLWindow::initGL()
 	setAttribute(Qt::WA_NoSystemBackground);
 
 	PIXELFORMATDESCRIPTOR pfd = {
-		sizeof(PIXELFORMATDESCRIPTOR), 1,
-		PFD_DRAW_TO_WINDOW | PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER,
-		PFD_TYPE_RGBA, 32, 0, 0, 0, 0, 0, 0,
-		0, 0, 0, 0, 0, 0, 0,
-		24, 8, 0,
-		PFD_MAIN_PLANE, 0, 0, 0, 0 };
+		sizeof(PIXELFORMATDESCRIPTOR), 
+		1,
+		PFD_DRAW_TO_WINDOW | 
+		PFD_SUPPORT_OPENGL | 
+		PFD_DOUBLEBUFFER,
+		PFD_TYPE_RGBA, 
+		32, 
+		0, 0, 0, 0, 0, 0,
+		0, 0, 
+		0, 0, 0, 0, 0,
+		24, 
+		8, 
+		0,
+		PFD_MAIN_PLANE, 
+		0, 
+		0, 0, 0 
+	};
 
 	hdc = GetDC((HWND)winId());
 

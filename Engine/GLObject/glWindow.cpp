@@ -53,6 +53,7 @@ GLvoid glWindow::initView()
 
 	glClearColor(0.0f, 0.1f, 0.3f, 0.0f);
 	
+	glEnable(GL_MULTISAMPLE);
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 	glEnable(GL_CULL_FACE);
