@@ -44,6 +44,7 @@ The created scene can be saved as a file and imported through the File Manager a
 ![CreatePlan](./screenshot/GameLifecycle.png)
 
 ## Map Tool
+![CreatePlan](./screenshot/tool01.png)
 
 ## Game Scene
 For one game to work, you must inherit the game scene and define at least one new game scene. If you inherit the game scenes provided by the engine, you can use methods such as **game logic**, **rendering**, and **input event**.
@@ -116,7 +117,8 @@ animation.
 
 Below is a simple example.
 
-(...)
+![](./screenshot/animation.gif)
+
 
 The second is an animation that lets you run on a specific event at run-time. This does not rely on the timeline of the scene, but has independent execution time. Therefore, it is possible to create an animation about the desired motion during run-time.
 
@@ -278,6 +280,8 @@ MyButton.Connect(this, &MyGameScene::DoSomething);
 ## Shader
 It is possible to compile a Vertex / Fragment Shader file in real time and check it in the viewport.
 
+![](./screenshot/shadercompile.gif)
+
 
 ## Game Data
 It’s a container that can manage the score of the game. It keeps the same information even after the game ends because it is saved as a file.
@@ -316,8 +320,4 @@ When cleaning the block rows, the animation was applied to create a dynamic move
 
 Also, many of the graphic resources used in games are handled by shaders in real time without using textures, which can reduce the memory used for textures.
 
-![CreatePlan](./screenshot/screenshot01.png)
-
-![CreatePlan](./screenshot/screenshot01.png)
-
-![CreatePlan](./screenshot/screenshot01.png)
+![](./screenshot/gameruntime.gif)

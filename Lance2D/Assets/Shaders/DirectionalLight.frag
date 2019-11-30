@@ -22,7 +22,7 @@ void main()
 	// vec3 textureColor = texture(TextureSampler0, UV).rgb;
 	vec3 ambient = vec3(0.1, 0.1, 0.1) * inputColor.rgb;
     vec3 norm = normalize(Normal);
-    vec3 lightPos = vec3(-50, 0, -50);
+    vec3 lightPos = vec3(-1, 1, 1);
     vec3 lightDir = normalize(lightPos);  
     vec3 viewDir = normalize(eyeVector);
     vec3 reflectDir = -reflect(viewDir, norm);  
